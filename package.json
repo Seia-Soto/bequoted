@@ -1,0 +1,40 @@
+{
+  "name": "bequoted",
+  "version": "1.0.0",
+  "description": "A simple map of functions for ease of life.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env DEBUG=bequoted* node -r esm .",
+    "debug": "cross-env DEBUG=* node -r esm .",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bequoted",
+    "chatbot"
+  ],
+  "author": "Seia-Soto <seia@outlook.kr>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "debug": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "esm": "^3.2.25",
+    "standard": "^16.0.2"
+  },
+  "esm": {
+    "cjs": true,
+    "mode": "all",
+    "await": false,
+    "force": false,
+    "wasm": true
+  }
+}
