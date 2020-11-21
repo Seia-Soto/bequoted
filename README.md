@@ -7,6 +7,7 @@ Chatbot, A simple map of functions for ease of life.
 ## Table of Contents
 
 - [Introduction](#Introduction)
+- [Development](#Development)
 
 ----
 
@@ -18,7 +19,8 @@ Like those chat bot ecosystems, this repository will only include the logics or 
 
 ## About multi-platform chat bot
 
-What I want to archive in this project is multi-platform. So, I want to attach some description.
+What I want to archive in this project is multi-platform.
+So, I want to attach some description.
 Commonly, people don't use one social platform to talk with their friends.
 However, if there is some issues the messenger which they use, people need to move their platform and this is why I thought that chat bot need to provide multi-platform function.
 Finally, I've created this project and want to research about how this can be possible without(or maybe less-stressful) stressful works such as integrating the different API.
@@ -55,3 +57,21 @@ I am going to integrate a lot of parts that can be worked in *out application le
 > **What is common works**
 >
 > Common works are *really* common works that chat bots in different platform shares such as parsing message into *prefix, command, args*.
+
+# Development
+
+This section will describe about the development of this repository.
+
+## Environment
+
+This project will be managed and coded with JavaScript(not TypeScript) with Node.JS.
+
+- Node.JS with latest LTS release
+- NPM
+- Some trusted(not causing major issues) libraries that can be used in large environment
+
+### The compatibility with early releases of Node.JS
+
+Using the latest LTS release of Node.JS isn't meaning that I am not caring the early releases of Node.JS.
+However, they're old and to earn the performance I am encouraging later release.
+I won't test about the coverage in early-releases, however, most code will work in v10 or later releases.
