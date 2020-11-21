@@ -4,8 +4,8 @@
   "description": "A simple map of functions for ease of life.",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env DEBUG=bequoted* node -r esm .",
-    "debug": "cross-env DEBUG=* node -r esm .",
+    "start": "cross-env DEBUG=bequoted* node .",
+    "debug": "cross-env DEBUG=* node .",
     "lint": "standard",
     "lint-fix": "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +27,6 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "esm": "^3.2.25",
     "standard": "^16.0.2"
   },
   "esm": {
@@ -36,5 +35,13 @@
     "await": false,
     "force": false,
     "wasm": true
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "bufferutil": "^4.0.2",
+    "eris": "^0.14.0",
+    "erlpack": "github:abalabahaha/erlpack",
+    "sodium-native": "^3.2.0",
+    "zlib-sync": "^0.1.7"
   }
 }
