@@ -1,6 +1,6 @@
 const debug = require('./debug')
 
-const parse = message => {
+module.exports = message => {
   debug('parsing message structure:', message)
 
   const [prefix, command, ...args] = message.trim().split(' ')
@@ -11,5 +11,3 @@ const parse = message => {
     args
   }
 }
-
-module.exports = parse
