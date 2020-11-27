@@ -1,3 +1,3 @@
 module.exports.connect = require('./connect')
-module.exports.message = require('./message')
+module.exports.messageCreate = require('./messageCreate')
 module.exports.ready = require('./ready')
